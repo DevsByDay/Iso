@@ -23,7 +23,8 @@ player.currentTime = 0;
 }
 function replay_aud()
 {
-player.loop = true;
+player.currentTime = 0;
+play_aud();
 }
 function change_vol()
 {
