@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() { startplayer(); }, false);
-var player;
-
+let player;
+let span = document.getElementById("volume-number");
 
 function startplayer()
 {
@@ -11,6 +11,7 @@ player.controls = false;
 function play_aud()
 {
 player.play();
+player.loop = true;
 }
 function pause_aud()
 {
@@ -28,5 +29,11 @@ play_aud();
 }
 function change_vol()
 {
-player.volume=document.getElementById("change_vol").value;
+    let volume = document.getElementById('change_vol');
+    player.volume=volume.value;
+    
+    span.textContent=(volume.value)*100;
+
 }
+
+
