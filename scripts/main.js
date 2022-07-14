@@ -32,7 +32,7 @@ function replay_aud() {
 function change_vol() {
   let volume = document.getElementById("change_vol");
   player.volume = volume.value;
-  span.textContent = volume.value * 100;
+  span.textContent = `${volume.value * 100}%`;
 }
 // make a function to toggle the volume number to hidden
 function toggleVolumeNumber() {
