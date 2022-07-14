@@ -11,6 +11,7 @@ let span = document.getElementById("volume-number");
 function startplayer() {
   player = document.getElementById("music_player");
   player.controls = false;
+
 }
 
 function play_aud() {
