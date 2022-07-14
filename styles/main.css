@@ -1,6 +1,48 @@
+body{ background-image:url('../assets/app.ico');
+background-repeat:no-repeat;
+background-size: cover;
+display:grid;
+place-items: center;
+text-align:center;
+}
+
 .shown{
-    display: inline
+    display: inline;
+    color:blue;
 }
 .hidden{
     display:none
+}
+#wrapper{
+    background: #000;
+    display:flex;
+    border-radius: 30px;
+    flex-direction:row;
+    min-width: 15%;
+    max-width: 15%;
+    justify-content: space-evenly;
+    animation: color_change 6s infinite alternate;
+}
+#player{
+    display: grid;
+    place-items:center;
+}
+
+
+button{
+    border-radius: 50%;
+    font-size: 20px;
+    
+    cursor: pointer;
+}
+
+button:hover{
+   background: skyblue;
+    cursor: pointer;
+ 
+}
+
+@keyframes color_change {
+	from { background-color: blue; }
+	to { background-color: red; }
 }
