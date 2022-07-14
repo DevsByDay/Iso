@@ -17,7 +17,15 @@
             <button onclick="pause_aud()" id = 'pause_button'>pause</button>
             <button onclick = "stop_aud()" id = "stop_button">stop</button>
             <button onclick = "replay_aud()" id = "replay_button">Replay</button>
-            <input type="range" id="change_vol" onchange="change_vol()" step="0.05" min="0" max="1" value="1"/>
+            <input  onmouseenter="toggleVolumeNumber2()"
+                    onmouseleave="toggleVolumeNumber()"
+                    type="range" id="change_vol" 
+                    onchange="change_vol()" 
+                    step="0.001" 
+                    min="0" 
+                    max="1" 
+                    value="1"/>
+            <span id="volume-number" class="shown"></span>
         </div>
     </div>
 </body>
